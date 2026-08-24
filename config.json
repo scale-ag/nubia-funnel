@@ -1,0 +1,43 @@
+{
+  "platform": "Meta Ads",
+  "title": "Funil de Tráfego — Núbia Oliveira",
+  "currency": "BRL",
+
+  "_comment_tax": "Imposto obrigatorio do Meta Ads. Multiplicador aplicado sobre o gasto bruto. TODAS as metricas usam o gasto COM imposto. Para Google Ads, troque para 1.0.",
+  "tax_multiplier": 1.1385,
+
+  "ads": {
+    "spreadsheet_id": "1F2_6lGJHuqXZ2yaDqTzoV8GGrDYcr7_5VeqJLw_OwmE",
+    "sheet_name": null,
+    "columns": {
+      "date": "Day",
+      "campaign": "Campaign Name",
+      "adset": "Ad Set Name",
+      "ad": "Ad Name",
+      "impressions": "Impressions",
+      "clicks": "Link Clicks",
+      "page_views": "Landing Page Views",
+      "checkouts": "Checkouts Initiated",
+      "spend": "Amount Spent"
+    }
+  },
+
+  "sales": {
+    "spreadsheet_id": "1io1XMhFiGOsrvBAJ23Q1RirQariw49onguZ3R_TeZqc",
+    "sheet_name": null,
+    "columns": {
+      "date": "data_venda",
+      "value": "faturamento",
+      "status": "",
+      "utm_source": "utm_source",
+      "_comment_utm_swap": "ATENCAO: nesta planilha as UTMs vieram trocadas. O nome da CAMPANHA do anuncio esta gravado em utm_medium e o nome do CONJUNTO em utm_campaign. Por isso o mapeamento abaixo aponta utm_campaign->coluna 'utm_medium' e utm_adset->coluna 'utm_campaign'. Confirmado empiricamente: casa 15/16 vendas no nivel de anuncio.",
+      "utm_campaign": "utm_medium",
+      "utm_adset": "utm_campaign",
+      "utm_ad": "utm_content"
+    },
+    "_comment_status": "Somente estes status contam como venda. Deixe [] para contar todas as linhas. Esta planilha nao tem coluna de status, entao contamos todas.",
+    "approved_status": [],
+    "_comment_traffic": "Vendas de trafego pago = utm_source igual a este valor (case-insensitive). O funil, CAC, ROAS etc. usam SO essas vendas; o restante (organico/direto) entra so como referencia.",
+    "traffic_source": "meta-ads"
+  }
+}
